@@ -17,13 +17,13 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
 
     $result = $conexao-> query($sql);
 
-    print_r($result);
+    //print_r($result);
 
-    //header('Location: home.php');
+    header('Location: home.php');
 
 }else{
     //não precisa
-    header('Location: login.php');
+    header('Location: cadastro.php');
 }
 
 ?>

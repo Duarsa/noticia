@@ -20,6 +20,37 @@ header {
     padding: 20px 0;
 }
 
+.login-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; /* Distância do topo */
+    right: 120px; /* Distância da direita */
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+
+.cadastro-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+.cadastro-button:hover {
+    background-color: #0056b3;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,12 +60,12 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 90px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 section.news {
@@ -61,10 +92,10 @@ footer {
 <body>
     <header>
         <h1>Notícias de Política</h1>
+        <a href="login.php" class="login-button">Login</a>
+        <a href="cadastro.php" class="cadastro-button">Cadastrar</a>
         
-    </header>
-
-    <nav>
+        <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="economia.php">Economia</a></li>
@@ -72,17 +103,20 @@ footer {
             <li><a href="entretenimento.php">Entretenimento</a></li>
         </ul>
     </nav>
+    </header>
+
+    
 
     <section class="news">
         <article>
             <h2>Título da Notícia de Política 1</h2>
             <p>Descrição da notícia de política.</p>
-            <a href="#">Leia mais...</a>
+            <a href="politica/noticia1.php">Leia mais...</a>
         </article>
         <article>
             <h2>Título da Notícia de Política 2</h2>
             <p>Descrição da notícia de política.</p>
-            <a href="#">Leia mais...</a>
+            <a href="politica/noticia2.php">Leia mais...</a>
         </article>
         <article>
             <h2>Título da Notícia de Política 3</h2>

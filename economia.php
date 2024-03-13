@@ -20,6 +20,37 @@ header {
     padding: 20px 0;
 }
 
+.login-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; /* Distância do topo */
+    right: 120px; /* Distância da direita */
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+
+.cadastro-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px; 
+    right: 20px;
+}
+
+.cadastro-button:hover {
+    background-color: #0056b3;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,12 +60,12 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 90px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 section.news {
@@ -58,12 +89,14 @@ footer {
     </style>
 
 </head>
+
 <body>
     <header>
         <h1>Notícias de Economia</h1>
-    </header>
+        <a href="login.php" class="login-button">Login</a>
+        <a href="cadastro.php" class="cadastro-button">Cadastrar</a>
 
-    <nav>
+        <nav>
         <ul>
             <li><a href="home.php">Home</a></li>
             <li><a href="politica.php">Política</a></li>
@@ -72,6 +105,9 @@ footer {
         </ul>
     </nav>
 
+    </header>
+
+    
     <section class="news">
         <article>
             <h2>Título da Notícia de Economia 1</h2>

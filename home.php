@@ -113,7 +113,7 @@ footer {
 
     <section class="news">
         <article>
-            <h2>Novas Medidas na Política Nacional</h2>
+            <h2>Rogerio Marinho diz que governo federal tem política 'retrógrada'</h2>
             <p>O governo anuncia novas medidas para impulsionar a economia do país.</p>
             <a href="#">Leia mais...</a>
         </article>
