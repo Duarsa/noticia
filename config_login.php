@@ -1,4 +1,6 @@
 <?php
+
+session_start();
 //print_r($_REQUEST); //confirmar se envia dados
 
 
@@ -12,14 +14,23 @@ if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])
     print_r('Email: '. $email);
     print_r('<br>');
     print_r('Senha: '. $senha);
-*/
-    $sql = "SELECT * FROM cad_users WHERE email='$email' AND senha='$senha'";
+    */
+    $sql = "SELECT * FROM cad_users WHERE email='$email' and senha='$senha'";
 
     $result = $conexao-> query($sql);
 
-    //print_r($result);
+    if(mysqli_num_rows($result)<1){
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
 
-    header('Location: home.php');
+        header('Location: login.php');
+    }else{
+        $_SESSION['email'] = $email;
+        $_SESSION['senha'] = $senha;
+
+        header('Location: sistema.php');
+
+    }
 
 }else{
     //não precisa

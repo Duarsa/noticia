@@ -109,13 +109,13 @@ footer {
 
     <section class="news">
         <article>
-            <h2>Título da Notícia de Política 1</h2>
-            <p>Descrição da notícia de política.</p>
+            <h2>Rogerio Marinho diz que governo federal tem política 'retrógrada'</h2>
+            <p>O senador Rogerio Marinho (PL-RN) afirmou, em pronunciamento...</p>
             <a href="politica/noticia1.php">Leia mais...</a>
         </article>
         <article>
-            <h2>Título da Notícia de Política 2</h2>
-            <p>Descrição da notícia de política.</p>
+            <h2>O senador Rogerio Marinho (PL-RN) afirmou, em pronunciamento nesta terça-feira...</h2>
+            <p>A cúpula do União Brasil deve se reunir nos próximos dias para definir o afastamen...</p>
             <a href="politica/noticia2.php">Leia mais...</a>
         </article>
         <article>
